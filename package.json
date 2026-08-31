@@ -1,0 +1,15 @@
+{
+  "name": "turbopack-scope-hoisting-factory-discard",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "next build",
+    "analyze": "node analyze-chunks.mjs",
+    "repro": "node turbopack-group-aliasing.mjs"
+  },
+  "dependencies": {
+    "next": "16.3.3",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  }
+}
