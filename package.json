@@ -1,11 +1,14 @@
 {
-  "name": "turbopack-scope-hoisting-factory-discard",
+  "name": "turbopack-first-wins-repro",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "build": "next build",
     "analyze": "node analyze-chunks.mjs",
-    "repro": "node turbopack-group-aliasing.mjs"
+    "repro:natural": "node reproduce-natural.mjs",
+    "repro:synthetic": "node reproduce-synthetic.mjs",
+    "repro": "npm run repro:natural && npm run repro:synthetic",
+    "verify": "npm run build && npm run analyze && npm run repro"
   },
   "dependencies": {
     "next": "16.3.3",

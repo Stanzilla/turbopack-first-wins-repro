@@ -1,14 +1,12 @@
-import dynamic from 'next/dynamic';
-import { comboAb } from '../lib/combo-ab.js';
-import { comboBc } from '../lib/combo-bc.js';
-
-const Widget = dynamic(() => import('../components/widget.js'));
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <main>
-      <h1>{comboAb('home') + comboBc('home')}</h1>
-      <Widget />
+      <h1>Turbopack first-wins reproduction</h1>
+      <Link href="/dyn-a">dynamic import only</Link>
+      <br />
+      <Link href="/dyn-b">static and dynamic import</Link>
     </main>
   );
 }
