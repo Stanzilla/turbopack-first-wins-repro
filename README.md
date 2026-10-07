@@ -2,7 +2,7 @@
 
 Reproduction for [vercel/next.js#98099](https://github.com/vercel/next.js/issues/98099).
 
-- **Next.js:** 16.3.3 and 16.4.0-canary.12
+- **Next.js:** 16.4.0 (also reproduced on 16.3.3 and 16.4.0-canary.12)
 - **Bundler:** Turbopack production build
 - **Router:** Pages Router
 - **Runtime:** browser
@@ -27,10 +27,10 @@ npm run repro:synthetic
 
 No browser or dev server is required. The scripts discover chunk names and module IDs from `.next`; they do not depend on generated hashes.
 
-To check the reported canary version:
+To check an older version:
 
 ```bash
-npm install --no-save next@16.4.0-canary.12
+npm install --no-save next@16.3.3
 npm run verify
 ```
 
