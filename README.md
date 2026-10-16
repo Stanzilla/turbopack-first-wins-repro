@@ -2,7 +2,7 @@
 
 Reproduction for [vercel/next.js#98099](https://github.com/vercel/next.js/issues/98099).
 
-- **Next.js:** 16.4.0 (also reproduced on 16.3.3 and 16.4.0-canary.12)
+- **Next.js:** 16.4.2 (also reproduced on 16.3.3, 16.4.0-canary.12 and 16.4.0)
 - **Bundler:** Turbopack production build
 - **Router:** Pages Router
 - **Runtime:** browser
